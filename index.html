@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="meilishuo">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="js/libs/angular.js" type="text/javascript" charset="utf-8"></script>
+   	<script type="text/javascript" src="js/libs/angular-css.min.js"  charset="utf-8"></script>
+   	<script type="text/javascript" src="js/libs/angular-ui-router.js" charset="utf-8"></script>
+   	<script type="text/javascript" src="app.js" charset="utf-8"></script>
+   	<script src="components/home/home.js" type="text/javascript" charset="utf-8"></script>
+   	<script type="text/javascript" src="components/category/category.js" charset="utf-8"></script>
+   	<script type="text/javascript" src="components/shopcar/shopcar.js" charset="utf-8"></script>
+    <script src="components/mine/mine.js" type="text/javascript" charset="utf-8"></script>
+    
+   	
+</head>
+<body>
+	<div id="wrap">
+		<div id="main" ui-view></div>
+		<div id="tab">
+			<ul>
+				<li>
+					<a ui-sref='home' href="">首页</a>
+				</li>
+				<li>
+					<a ui-sref='category' href="">分类</a>
+				</li>
+				<li>
+					<a ui-sref='shopcar' href="">购物车</a>
+				</li>
+				<li>
+					<a ui-sref='mine' href="">我的</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
